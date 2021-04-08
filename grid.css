@@ -1,0 +1,44 @@
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;/*отступ между grid-column*/
+    grid-row-gap: 10px;/*отступ между grid-row*/
+}
+
+.grid__container > div:nth-child(1) {
+    background:tomato;
+}
+
+.grid__container > div:nth-child(2) {
+    background: aqua;
+}
+
+.grid__container > div:nth-child(3) {
+    background: crimson;
+}
+
+.grid__container > div:nth-child(4) {
+    background: darkgreen;
+}
+
+.grid__container > div:nth-child(5) {
+    background: goldenrod;
+}
+
+.grid__container > div:nth-child(6) {
+    background: lime;
+}
+
+.grid__container > div:nth-child(7) {
+    background: steelblue;
+}
+
+.grid__container > div:nth-child(8) {
+    background: teal;
+}
+
+.grid__item {
+    text-align: center;
+    padding: 1.5rem;
+}
