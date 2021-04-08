@@ -1,14 +1,11 @@
-.container {
-  height: 1200px;
+/* .container {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .col {
   width: 33.33%;
   background: rgb(124, 124, 124);
-  
 }
 
 .col-1 {
@@ -40,8 +37,7 @@
   width: 100%;
   background-image: url(https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
   background-repeat: no-repeat;
-  background-size: cover;
-  
+  background-size: cover
 }
 
 .col-11 {
@@ -49,21 +45,78 @@
 }
 
 @media(max-width: 400px) {
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11 {
+  .col {
       width: 100%;
       
   }
-  .col-4 {
+  .col {
+    order: 0;
+  }
+} */
+
+.grid__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__body > div:nth-child(1),
+.grid__body > div:nth-child(2) {
+  width: 50%;
+}
+
+.grid__body > div:nth-child(3),
+.grid__body > div:nth-child(4),
+.grid__body > div:nth-child(5),
+.grid__body > div:nth-child(6),
+.grid__body > div:nth-child(7),
+.grid__body > div:nth-child(8),
+.grid__body > div:nth-child(11) {
+  width: 33.33%;
+}
+
+.grid__body > div:nth-child(9) {
+  width: 66.66%;
+}
+
+.grid__body > div:nth-child(10) {
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid__body > div:nth-child(4) {
+  order: 3;
+}
+
+.grid__body > div:nth-child(7) {
+  order: 2;
+}
+
+.grid__body > div:nth-child(11) {
+  order: 1;
+}
+
+.grid__item {
+  text-align: center;
+  background: silver;
+  padding: 2rem;
+}
+
+@media(max-width: 400px) {
+  .grid__body > div:nth-child(1), 
+  .grid__body > div:nth-child(2), 
+  .grid__body > div:nth-child(3), 
+  .grid__body > div:nth-child(4), 
+  .grid__body > div:nth-child(5), 
+  .grid__body > div:nth-child(6), 
+  .grid__body > div:nth-child(7), 
+  .grid__body > div:nth-child(8), 
+  .grid__body > div:nth-child(9), 
+  .grid__body > div:nth-child(10), 
+  .grid__body > div:nth-child(11) 
+  {
+    width: 100%;
     order: 0;
   }
 }
